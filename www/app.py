@@ -62,3 +62,7 @@ if __name__ == "__main__":
     # Define HOST and port
     app.run(host='0.0.0.0', port=8888)
 
+
+@app.route('/reproductor')
+def reproductor():
+    return render_template('reproductor.html')
