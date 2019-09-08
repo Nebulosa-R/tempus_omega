@@ -32,21 +32,31 @@
 <body>
     <div class="header">
                 <h3 class="text-muted">Tempus Omega</h3>
-                <button id="alternar" class="btn btn-primary">Mostrar canciones</button>
+                <!--button id="alternar" class="btn btn-primary">Mostrar canciones</button-->
     </div>
+    
     <div class="container"> 
-        <div class="col-md-4">ZONA DEL REPRODUCTOR DE MUSICA
+        <div class="col-md-2">ZONA DEL REPRODUCTOR DE MUSICA
             <div class="btn-group">
-                <button class="btn btn-rounded btn-primary">Primary<i class="fas  fa-play pl-1"></i></button>            
+                <button type="button">Play<span class="glyphicon glyphicon-triangle-right"></span></button>
+                <button class="btn btn-primary"><a href="#" id="alternar-panel-oculto">Mostrar el panel oculto</a></button>
             </div>
+            
+                <div id="panel-oculto" class="btn btn-primary" style="display:none;">
+                    Listado de canciones<br>
+                    Cancion x
+                    Cancion y
+                </div>
+            
         </div>
-        <div class="col-md-3">
+        
+        <!--div class="col-md-2">
             <div id="prueba" class="jumbotron" >
                 <h1>Lista</h1>
                 <p>Cancion 1</p>
                 <p>Cancion 2</p>
             </div>
-        </div>
+        </div-->
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -57,7 +67,9 @@
     <script src="/static/js/index.js"></script>
 
 </body>
-<footer class="footer-copyright text-center py-3">
-    <p>&copy; Taller de Proyecto 2</p>
+<footer class="page-footer font-small blue" >
+    <div class="footer-copyright text-center py-3">
+        &copy; Taller de Proyecto 2
+    </div>
 </footer>
 </html>
