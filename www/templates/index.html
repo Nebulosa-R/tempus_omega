@@ -21,23 +21,23 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-            <a class="btn btn-primary" href="#" id="show"><i class="fa fa-eye"></i> Mostrar Canciones</a>
-            <h3 class="text-muted">Tempus Omega</h3>
-        </div>
- 
-        <div class="jumbotron" id="element" style="display: none;">
-            <div id="close"><a class="btn btn-small" href="#" id="hide" title="Cerrar">cerrar<i class="fa fa-close"></i></a></div>
-            <h1>Lista</h1>
-            <p>Cancion 1</p>
-            <p>Cancion 2</p>
-            
-        </div>
- 
+    <div class="header">
+                <h3 class="text-muted">Tempus Omega</h3>
+                <button id="alternar" class="btn btn-primary">Mostrar canciones</button>
     </div>
-     <div class="btn-group">
-        <button type="button" class="btn btn-info btn-lg">Play<span class="glyphicon glyphicon-triangle-right"></span></button>
+    <div class="container"> 
+        <div class="col-md-4">ZONA DEL REPRODUCTOR DE MUSICA
+            <div class="btn-group">
+                <button type="button" class="btn btn-info btn-lg">Play<span class="glyphicon glyphicon-triangle-right"></span></button>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div id="prueba" class="jumbotron" >
+                <h1>Lista</h1>
+                <p>Cancion 1</p>
+                <p>Cancion 2</p>
+            </div>
+        </div>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -48,7 +48,7 @@
     <script src="/static/js/index.js"></script>
 
 </body>
-<footer class="footer">
+<footer class="footer-copyright text-center py-3">
     <p>&copy; Taller de Proyecto 2</p>
 </footer>
 </html>
