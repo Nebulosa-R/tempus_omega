@@ -33,6 +33,30 @@
     }
 }
 
+.btn.btn-info {
+    color: #000000;
+    background-color: #958eab;
+    background-image: linear-gradient(to bottom, #389cb5, #2394ad);
+    border-color: #2da2c2 #2da2c2 #2da2c2;
+}
+.btn.btn-info:hover {
+    color: #000000;
+    background-color: #2394ad;
+    background-image: linear-gradient(to bottom, #2394ad, #2394ad);
+    border-color: #2da2c2 #2da2c2 #2da2c2;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 @media only screen and (max-width: 396px) {
     .myimage{
         top: 460px;
