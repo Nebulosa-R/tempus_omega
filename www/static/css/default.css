@@ -1,7 +1,8 @@
 body {
-    background-image: url("../img/background.jpg");
+	background-color: black;
+    /*background-image: url("../img/background.jpg");
     background-size: cover;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;    */
 }
 
 .logo{
