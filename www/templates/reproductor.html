@@ -10,43 +10,32 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/">
-    
     <link rel="stylesheet" href="/static/css/index.css">
     <link rel="stylesheet" href="/static/css/default.css">
 
     <!-- añadido por yani-->
      <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Material Design Bootstrap</title>
-    <!-- Font Awesome -->
+    <!-- Font Awesome - añade iconos -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
-    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="header">
                 <h3 class="text-muted">Tempus Omega</h3>
+                <button id="" class="btn btn-primary">Mostrar canciones</button>
     </div>
-    
     <div class="container"> 
-        <div class="col-md-2">ZONA DEL REPRODUCTOR DE MUSICA
-            <div class="btn-group">
-                <button type="button">Play<span class="glyphicon glyphicon-triangle-right"></span></button>
+        <div class="col-md-4">ZONA DEL REPRODUCTOR DE MUSICA</div>
+        <div class="col-md-3">
+            <div id="prueba" class="jumbotron" >
+                <h1>Lista</h1>
+                <p>Cancion 1</p>
+                <p>Cancion 2</p>
             </div>
-            
-                <div id="panel-oculto" class="btn btn-primary" style="display:none;">
-                    Listado de canciones<br>
-                    Cancion x
-                    Cancion y
-                </div>
-            
         </div>
+    </div>
+    <div class="btn-group">
+        <button class="btn btn-rounded btn-primary">Primary<i class="fas  fa-play pl-1"></i></button> 
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -57,9 +46,7 @@
     <script src="/static/js/index.js"></script>
 
 </body>
-<footer class="page-footer font-small blue" >
-    <div class="footer-copyright text-center py-3">
-        &copy; Taller de Proyecto 2
-    </div>
+<footer class="footer-copyright text-center py-3">
+    <p>&copy; Taller de Proyecto 2</p>
 </footer>
 </html>
