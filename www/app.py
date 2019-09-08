@@ -12,7 +12,7 @@ import os
 app = Flask(__name__)
 db = Database()
 pro = Process()
-
+# RUTAS 
 # Define the route to enter in the browser
 @app.route('/')
 def index():
