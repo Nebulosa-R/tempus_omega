@@ -58,11 +58,18 @@ $(document).ready(function(){
     Funcion que realiza el cambio de 
     texto del boton Mono/Stereo
 */
-function myFunction() {
+function functionMonoStereo() {
   var x = document.getElementById("mybtn");
   if (x.innerHTML === "Mono") {
-    x.innerHTML = "Stereo!";
+    x.innerHTML = "Stereo";
   } else {
     x.innerHTML = "Mono";
   }
+} 
+/* 
+    Funcion que reproduce musica 
+    (por ahora solo muestra un msje de alerta)
+*/
+function play() {
+	alert("Ha tocado el boton Play!!");
 } 

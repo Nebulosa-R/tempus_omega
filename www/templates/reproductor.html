@@ -7,16 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" type="image/jpg" href="/static/img/icon_radiopi.jpg" />
     <title>Estacion de radio</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/">
-    <link rel="stylesheet" href="/static/css/index.css">
-    <link rel="stylesheet" href="/static/css/default.css">
-
-    <!-- añadido por yani-->
-     <meta charset="utf-8">
-    <!-- Font Awesome - añade iconos -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -34,16 +28,16 @@
             </div>
         </div>
     </div>
+    <!--bootstrap 3.4 -->
     <div class="btn-group">
-        <button class="btn btn-rounded btn-primary"><i class="fas  fa-random pl-1"></i></button>
-        <button class="btn btn-rounded btn-primary"><i class="fas  fa-backward pl-1"></i></button>
-        <button class="btn btn-rounded btn-primary"><i class="fas  fa-play pl-1"></i></button> 
-        <button class="btn btn-rounded btn-primary"><i class="fas  fa-pause pl-1"></i></button>
-        <button class="btn btn-rounded btn-primary"><i class="fas  fa-stop pl-1"></i></button>
-        <button class="btn btn-rounded btn-primary"><i class="fas  fa-forward pl-1"></i></button>
-        <button class="btn btn-rounded btn-primary"><i class="fas  fa-redo pl-1"></i></button>
-        <button class="btn btn-rounded btn-primary">Mono</button>
-        <button id="mybtn" onclick="myFunction()">Mono</button>
+        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-backward"></span></button>
+        <button type="button" class="btn btn-primary" onclick="play()"><span class="glyphicon glyphicon-play"></span></button>
+        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-pause"></span></button>
+        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-stop"></span></button>
+        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-forward"></span></button>
+        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-repeat"></span></button>
+        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-random"></span></button>
+        <button type="button" class="btn btn-primary" id="mybtn" onclick="functionMonoStereo()">Mono</button>
     </div>
 
     <!-- Optional JavaScript -->
