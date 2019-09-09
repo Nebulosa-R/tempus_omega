@@ -54,6 +54,9 @@ $(document).ready(function(){
     );
 
 });
+/*variables utilizadas para contadores*/
+var count_click_random=0;
+var count_click_repeat=0;
 /* 
     Funcion que realiza el cambio de 
     texto del boton Mono/Stereo
@@ -106,12 +109,26 @@ function backward(){
     (por ahora solo muestra un msje de alerta)
 */
 function random(){
-	Swal.fire('Boton canciones random!')
+	if (count_click_random == 0){
+		count_click_random+=1;
+		Swal.fire('Boton canciones random activado!')
+	}
+	else{
+		Swal.fire('Boton canciones random desactivado!')
+		count_click_random=0;
+	}
 } 
 /* 
     Funcion que reproduce musica 
     (por ahora solo muestra un msje de alerta)
 */
 function repeat(){
-	Swal.fire('Boton repetir canciones!')
+	if (count_click_repeat == 0){
+		count_click_repeat+=1;
+		Swal.fire('Repetir cancion activado!')
+	}
+	else{
+		Swal.fire('Repetir cancion desactivado!')
+		count_click_repeat=0;
+	}
 } 

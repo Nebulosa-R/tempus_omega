@@ -11,12 +11,30 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- CSS LOCAL-->
+    <link rel="stylesheet" href="/static/css/index.css">
 </head>
 
 <body>
     <div class="header">
-                <h3 class="text-muted">Tempus Omega</h3>
-                <button id="" class="btn btn-primary">Mostrar canciones</button>
+                <h1 class="text-muted">Tempus Omega</h1>
+                <br>
+                <br>
+                <!--bootstrap 3.4 -->
+                <div class="text-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary" onclick="backward()"><span class="glyphicon glyphicon-backward"></span></button>
+                        <button type="button" class="btn btn-primary" onclick="play()"><span class="glyphicon glyphicon-play"></span></button>
+                        <button type="button" class="btn btn-primary" onclick="pause()"><span class="glyphicon glyphicon-pause"></span></button>
+                        <button type="button" class="btn btn-primary" onclick="stop()"><span class="glyphicon glyphicon-stop"></span></button>
+                        <button type="button" class="btn btn-primary" onclick="forward()"><span class="glyphicon glyphicon-forward"></span></button>
+                        <button type="button" class="btn btn-primary" onclick="repeat()"><span class="glyphicon glyphicon-repeat"></span></button>
+                        <button type="button" class="btn btn-primary" onclick="random()"><span class="glyphicon glyphicon-random"></span></button>
+                        <button type="button" class="btn btn-primary" id="mybtn" onclick="functionMonoStereo()">Mono</button>
+                        <button id="" class="btn btn-primary">Mostrar canciones</button>
+                    </div>
+                </div>
     </div>
     <div class="container"> 
         <div class="col-md-4">ZONA DEL REPRODUCTOR DE MUSICA</div>
@@ -27,17 +45,6 @@
                 <p>Cancion 2</p>
             </div>
         </div>
-    </div>
-    <!--bootstrap 3.4 -->
-    <div class="btn-group">
-        <button type="button" class="btn btn-primary" onclick="backward()"><span class="glyphicon glyphicon-backward"></span></button>
-        <button type="button" class="btn btn-primary" onclick="play()"><span class="glyphicon glyphicon-play"></span></button>
-        <button type="button" class="btn btn-primary" onclick="pause()"><span class="glyphicon glyphicon-pause"></span></button>
-        <button type="button" class="btn btn-primary" onclick="stop()"><span class="glyphicon glyphicon-stop"></span></button>
-        <button type="button" class="btn btn-primary" onclick="forward()"><span class="glyphicon glyphicon-forward"></span></button>
-        <button type="button" class="btn btn-primary" onclick="repeat()"><span class="glyphicon glyphicon-repeat"></span></button>
-        <button type="button" class="btn btn-primary" onclick="random()"><span class="glyphicon glyphicon-random"></span></button>
-        <button type="button" class="btn btn-primary" id="mybtn" onclick="functionMonoStereo()">Mono</button>
     </div>
 
     <!-- Optional JavaScript -->
