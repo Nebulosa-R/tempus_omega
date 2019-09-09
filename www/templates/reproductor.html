@@ -30,13 +30,13 @@
     </div>
     <!--bootstrap 3.4 -->
     <div class="btn-group">
-        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-backward"></span></button>
+        <button type="button" class="btn btn-primary" onclick="backward()"><span class="glyphicon glyphicon-backward"></span></button>
         <button type="button" class="btn btn-primary" onclick="play()"><span class="glyphicon glyphicon-play"></span></button>
-        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-pause"></span></button>
-        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-stop"></span></button>
-        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-forward"></span></button>
-        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-repeat"></span></button>
-        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-random"></span></button>
+        <button type="button" class="btn btn-primary" onclick="pause()"><span class="glyphicon glyphicon-pause"></span></button>
+        <button type="button" class="btn btn-primary" onclick="stop()"><span class="glyphicon glyphicon-stop"></span></button>
+        <button type="button" class="btn btn-primary" onclick="forward()"><span class="glyphicon glyphicon-forward"></span></button>
+        <button type="button" class="btn btn-primary" onclick="repeat()"><span class="glyphicon glyphicon-repeat"></span></button>
+        <button type="button" class="btn btn-primary" onclick="random()"><span class="glyphicon glyphicon-random"></span></button>
         <button type="button" class="btn btn-primary" id="mybtn" onclick="functionMonoStereo()">Mono</button>
     </div>
 
@@ -48,6 +48,11 @@
   
     <script src="/static/js/index.js"></script>
     <script src="/static/js/reproductor.js"></script>
+    <!--agregado para msjes de alerta -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <!-- Optional: include a polyfill for ES6 Promises for IE11 and Android browser -->
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
 </body>
 <footer class="footer-copyright text-center py-3">
     <p>&copy; Taller de Proyecto 2</p>

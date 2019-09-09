@@ -70,6 +70,48 @@ function functionMonoStereo() {
     Funcion que reproduce musica 
     (por ahora solo muestra un msje de alerta)
 */
-function play() {
-	alert("Ha tocado el boton Play!!");
+function play(){
+	Swal.fire('Boton Play!')
+} 
+/* 
+    Funcion que reproduce musica 
+    (por ahora solo muestra un msje de alerta)
+*/
+function pause(){
+	Swal.fire('Boton Pause!')
+} 
+/* 
+    Funcion que reproduce musica 
+    (por ahora solo muestra un msje de alerta)
+*/
+function stop(){
+	Swal.fire('Boton Stop!')
+} 
+/* 
+    Funcion que reproduce musica 
+    (por ahora solo muestra un msje de alerta)
+*/
+function forward(){
+	Swal.fire('Boton Siguiente cancion!')
+} 
+/* 
+    Funcion que reproduce musica 
+    (por ahora solo muestra un msje de alerta)
+*/
+function backward(){
+	Swal.fire('Boton cancion anterior!')
+} 
+/* 
+    Funcion que reproduce musica 
+    (por ahora solo muestra un msje de alerta)
+*/
+function random(){
+	Swal.fire('Boton canciones random!')
+} 
+/* 
+    Funcion que reproduce musica 
+    (por ahora solo muestra un msje de alerta)
+*/
+function repeat(){
+	Swal.fire('Boton repetir canciones!')
 } 
