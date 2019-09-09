@@ -77,35 +77,35 @@ function play(){
 	Swal.fire('Boton Play!')
 } 
 /* 
-    Funcion que reproduce musica 
+    Funcion que pausa una cancion
     (por ahora solo muestra un msje de alerta)
 */
 function pause(){
 	Swal.fire('Boton Pause!')
 } 
 /* 
-    Funcion que reproduce musica 
+    Funcion que detiene musica: comienza del inicio de la lista de canciones 
     (por ahora solo muestra un msje de alerta)
 */
 function stop(){
 	Swal.fire('Boton Stop!')
 } 
 /* 
-    Funcion que reproduce musica 
+    Funcion que cambia a la siguiente cancion
     (por ahora solo muestra un msje de alerta)
 */
 function forward(){
 	Swal.fire('Boton Siguiente cancion!')
 } 
 /* 
-    Funcion que reproduce musica 
+    Funcion que vuelve a la cancion anterior
     (por ahora solo muestra un msje de alerta)
 */
 function backward(){
 	Swal.fire('Boton cancion anterior!')
 } 
 /* 
-    Funcion que reproduce musica 
+    Funcion que selecciona canciones aleatorias
     (por ahora solo muestra un msje de alerta)
 */
 function random(){
@@ -119,7 +119,7 @@ function random(){
 	}
 } 
 /* 
-    Funcion que reproduce musica 
+    Funcion que repite una cancion
     (por ahora solo muestra un msje de alerta)
 */
 function repeat(){
