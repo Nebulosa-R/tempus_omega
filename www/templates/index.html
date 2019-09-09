@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/jpg" href="/static/img/icon_radiopi.jpg" />
+    <title>Estacion de radio</title>
+
+    <!-- Latest compiled and minified CSS 3.4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- CSS LOCAL-->
+    <link rel="stylesheet" href="/static/css/index.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class=" jumbotron text-center">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">Proyecto 13</a>
+            </div>
+        </div>
+        </nav>
+        <h1>Tempus Omega</h1>                 
+    </div>
+    </div>
+    
+
+    <div class="container-fluid">
+            <div class="btn-group" >
+                        <button type="button" class="btn btn-primary" onclick="backward()"><span class="glyphicon glyphicon-backward"></span></button>
+                        <button type="button" class="btn btn-primary" onclick="play()"><span class="glyphicon glyphicon-play"></span></button>
+                        <button type="button" class="btn btn-primary" onclick="pause()"><span class="glyphicon glyphicon-pause"></span></button>
+                        <button type="button" class="btn btn-primary" onclick="stop()"><span class="glyphicon glyphicon-stop"></span></button>
+                        <button type="button" class="btn btn-primary" onclick="forward()"><span class="glyphicon glyphicon-forward"></span></button>
+                        <button type="button" class="btn btn-primary" onclick="repeat()"><span class="glyphicon glyphicon-repeat"></span></button>
+                        <button type="button" class="btn btn-primary" onclick="random()"><span class="glyphicon glyphicon-random"></span></button>
+                        <button type="button" class="btn btn-primary" id="mybtn" onclick="functionMonoStereo()">Mono</button>
+                        <button id="" class="btn btn-primary">Mostrar canciones</button>
+
+                        <!--codigo de prueba-->
+                        <a href="#demo" class="btn btn-info" data-toggle="collapse">More +</a>
+            </div>
+
+            <div class="row">
+                <a href="#demo" class="btn btn-info" id="cambio_texto" data-toggle="collapse" >Mostrar canciones</a>
+            </div>
+            <div class="collapse" id="demo">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Listado</div>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Titulo</th>
+                            <th scope="col">Autor</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>La vida es corta</td>
+                            <td>Hap-py</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        
+    </div>
+    <!--div class="panel panel-default">
+        <div class="panel-heading" role="tab">
+            <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" href="">hola</a>
+            </h4>
+        </div>
+    </div-->
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <!--script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script-->
+
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+        <!-- Latest compiled and minified JavaScript 3.4 -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+        
+        <!-- LOCAL JavaScript -->
+        <script src="/static/js/index.js"></script>
+        <script src="/static/js/reproductor.js"></script>
+        <!--agregado para msjes de alerta -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+        <script src="sweetalert2.all.min.js"></script>
+        <!-- Optional: include a polyfill for ES6 Promises for IE11 and Android browser -->
+        <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+
+</body>
+<footer class="page-footer font-small blue" >
+    <div class="footer-copyright text-center py-3">
+        &copy; Taller de Proyecto 2
+    </div>
+    <a class="btn btn-lg btn-success" href="reproductor">Link reproductor</a>
+</footer>
+</html>
