@@ -58,9 +58,11 @@ $(document).ready(function(){
     Funcion que realiza el cambio de 
     texto del boton Mono/Stereo
 */
-$("#example-one").on("click", function() {
-  var el = $(this);
-  el.text() == el.data("text-swap") 
-    ? el.text(el.data("text-original")) 
-    : el.text(el.data("text-swap"));
-});
+function myFunction() {
+  var x = document.getElementById("mybtn");
+  if (x.innerHTML === "Mono") {
+    x.innerHTML = "Stereo!";
+  } else {
+    x.innerHTML = "Mono";
+  }
+} 
