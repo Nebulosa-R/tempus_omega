@@ -35,10 +35,5 @@ if __name__ == '__main__':
     int_id_t1 = int(sys.argv[1])
     int_id_t2 = int(sys.argv[2])
     id_match = int(sys.argv[3])    
-    db = Database()
-    session = db.get_session()
-    results = [ session.query(Result).filter_by(id_match=id_match,id_team=int_id_t1).first(), 
-                session.query(Result).filter_by(id_match=id_match,id_team=int_id_t2).first()]
-    
     main(results, session)
     

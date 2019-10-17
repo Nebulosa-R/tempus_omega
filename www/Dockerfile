@@ -7,7 +7,6 @@ ENV FLASK_DEBUG 1
 ENV FLASK_RUN_PORT 8888
 
 #instalar la imagen base de python
-RUN apk add bash gcc musl-dev mysql mariadb-dev
 RUN mkdir /www/
 ADD requeriments.txt /www/requeriments.txt
 RUN pip install -r /www/requeriments.txt 
