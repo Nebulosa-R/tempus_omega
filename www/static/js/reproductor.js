@@ -74,7 +74,9 @@ function functionMonoStereo() {
     (por ahora solo muestra un msje de alerta)
 */
 function play(){
-	Swal.fire('Boton Play!')
+	//Swal.fire('Boton Play!')
+    var music = document.getElementById("music");
+    music.play();
 } 
 /* 
     Funcion que pausa una cancion
